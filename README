@@ -1,0 +1,11 @@
+This project was originally designed to allow gamers to communicate
+internationally through SMS with a simple web interface, and without 
+incurring large international messaging fees. Specifically it's for 
+communicating with users in other countries who are reachable through SMS
+but not other means. (Allowing for example, Guild/Clan leaders to reach
+players who are not at their computers)
+
+Mostly this is just a fun experiment with the twilio api and a few other
+fun technologies, but it's not even close to remotely working, I just wanted
+to stash it here until I can come back to it.
+

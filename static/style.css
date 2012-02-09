@@ -1,0 +1,25 @@
+           #user-list {
+                border: 1px solid black;
+                width: 300px;
+                display: inline-block;
+                float: left;
+                margin: 1em 0.5em;
+                padding: 0.5em;
+            }
+            #message-list {
+                border: 1px solid black;
+                width: 500px;
+                display: inline-block;
+                float: left;
+                margin: 1em 0.5em;
+                padding: 0.5em;
+            }
+            ul#users li {
+                border: 1px solid black;
+                padding: 1em;
+                list-style-type: none;
+                margin: 0.25em;
+                cursor: pointer;
+            }
+            #add-user {
+            }

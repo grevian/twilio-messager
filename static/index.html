@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Messaging Service</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+
+<script id="user-template" type="text/x-jQuery-tmpl">
+ <div class="user-widget">
+  <h1>${user_name}</h1>
+  <div class="thumb">
+   <a href="/users/${user_id}"><img src="${user_image}" class="avatar" width="48" height="48" alt="${user_name}"/></a>
+  </div>
+  <div class="details">
+    ${phone_number}
+  </div>
+ </div>
+</script>
+
+        <h1>SMS Service</h1>
+        <div id="user-list">
+            <button id="add-user">Add User</button>
+            <ul id="users">
+                <li>Josh</li>
+                <li>Heather</li>
+            </ul>
+        </div>
+
+        <div id="message-list">
+            <button id="message-clear">Clear Messages</button>
+            <ul id="messages">
+                <li class="incoming">
+                 <header>From Josh</header>
+                  Hey does this thing work?
+                 <footer>1/31/2012 - 5:43PM</footer>
+                </li>
+                <li class="outgoing">
+                 <header>From Heather</header>
+                  NOPE
+                 <footer>1/31/2013 - 5:50PM</footer>
+                </li>
+            </ul>
+            <form method="POST" action="">
+                <textarea resizeable="true" cols="40" rows="4" id="message-input"></textarea>
+                <input type="submit" value="Send Message" />
+            </form>
+        </div>
+
+    </body>
+</html>
